@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+   <children>
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="724.0" text="Classifica" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="13.0" prefWidth="600.0">
+         <children>
+            <Label text="Posizione">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="Nome Utente">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="20.0" right="50.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="Punteggio">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="40.0" right="20.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="446.0" prefWidth="600.0">
+         <children>
+            <TextArea fx:id="areaPosizione" editable="false" prefHeight="323.0" prefWidth="86.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="20.0" top="5.0" />
+               </HBox.margin>
+            </TextArea>
+            <TextArea fx:id="areaNomeUtente" editable="false" prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </HBox.margin>
+            </TextArea>
+            <TextArea fx:id="areaPunteggio" editable="false" prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </HBox.margin>
+            </TextArea>
+            <VBox prefHeight="323.0" prefWidth="137.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="43.0" prefWidth="123.0" text="Utente da eliminare" textAlignment="CENTER" />
+                  <TextField fx:id="txtUtenteDaEliminare" alignment="CENTER" prefHeight="61.0" prefWidth="117.0" />
+                  <Button fx:id="btnElimina" mnemonicParsing="false" onAction="#eliminaUtente" prefHeight="46.0" prefWidth="122.0" text="Elimina" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
